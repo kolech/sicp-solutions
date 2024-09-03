@@ -1,6 +1,7 @@
 #lang sicp
-(define (make-segment x y)
-  (cons x y))
+
+(define (make-segment x1 y1 x2 y2)
+  (cons (make-point x1 y1) (make-point x2 y2)))
 
 (define (start-segment line-segment)
   (car line-segment))
